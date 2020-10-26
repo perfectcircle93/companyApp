@@ -14,7 +14,7 @@ router.get('/employees', async (req, res) => {
 
 router.get('/employees/random', async (req, res) => {
   try {
-    const count = await Employee.find().countDocumnets();
+    const count = await Employee.find().countDocuments();
     const random = Math.floor(Math.random() * count);
     const dep = await Employee.findOne().skip(random);
     if(!dep) res.status(404).json({ message: 'Not found' });
