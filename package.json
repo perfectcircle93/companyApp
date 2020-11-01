@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "mocha --watch \"./**/*.test.js\""
+    "test": "mocha --watch \"./{,!(node_modules)/**/}*.test.js\""
   },
   "dependencies": {
     "add": "^2.0.6",
@@ -17,5 +17,10 @@
     "mongoose": "5.7.1",
     "nodemon": "^1.19.1",
     "yarn": "^1.22.10"
+  },
+  "repository": "git@github.com:perfectcircle93/companyApp.git",
+  "author": "Magdalena Świderska <m.swiderska@outlook.com>",
+  "devDependencies": {
+    "tap": "^14.10.8"
   }
 }
