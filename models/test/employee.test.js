@@ -46,7 +46,7 @@ describe('Employee', () => {
       const employee1 = new Employee({
         firstName: 'Joe',
         lastName: 'Doe',
-        department: 'HR'
+        department: '5d9f1159f81ce8d1ef2bee38'
       });
       employee1.validate(err => {
         expect(err).to.not.exist;
